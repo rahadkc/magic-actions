@@ -10,6 +10,12 @@ jobs:
           run: |
             pwd
             ls
+        - name: checkout
+          uses: actions/checkout@v1
+        - name: List of files after checkout
+          run: |
+            pwd
+            ls -a
         - name: echo a string
           run: echo "Hello world"
         - name: multiline script
